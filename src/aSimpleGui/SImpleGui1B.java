@@ -1,5 +1,6 @@
 package aSimpleGui;
 
+import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -24,8 +25,12 @@ public class SImpleGui1B implements ActionListener {
 		// register button to aCtionListener
 		button.addActionListener(this);
 
-		// add button to window
-		frame.getContentPane().add(button);
+		// add button to window, with no additonal argument so will be added to
+		// the center
+		// frame.getContentPane().add(button);
+		
+		//add button to window East side
+		frame.getContentPane().add(BorderLayout.WEST, button);
 		// make program close on window close
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		// set window size
