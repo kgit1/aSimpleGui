@@ -34,7 +34,7 @@ public class SimpleGui2C implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
+		frame.repaint();
 
 	}
 
